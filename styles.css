@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rancho', cursive;
+  color:  white;
+  background: teal;
+}
+
+
+.header {
+  margin:  0;
+  text-align: center;
+  padding: 5px;
+  color: white;
+  background: teal;
+}
+
+#gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2px;
+}
+
+#gallery img {
+  width: 30%;
+  height: 220px;
+  /*object-fit: cover;*/
+  margin-top: 8px;
+  padding: 0 4px;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  #gallery img {
+    width: 50%;
+  }
+}
